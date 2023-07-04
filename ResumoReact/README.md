@@ -31,7 +31,7 @@
 - vite.config.js
 
 ## Desafios
-- Criar página html puto com react
+- Criar página html puro com react
 - criar um componte e add na p´´agina
 - criar segunndo compontente e add em outr compontente
 - criar um botao com contador
