@@ -18,10 +18,10 @@ const CardSection = ({ tasks, removeTask, completedTask }) => {
                     </p>
 
                     <div className='flex'>
-                        <span className='p-4  cursor-pointer'>
+                        <span className='p-2  cursor-pointer'>
                             <FaEdit />
                         </span>
-                        <span className='p-4  cursor-pointer'>
+                        <span className='p-2  cursor-pointer'>
                             <FaTrashAlt onClick={() => removeTask(obj.id)} />
                         </span>
                     </div>
