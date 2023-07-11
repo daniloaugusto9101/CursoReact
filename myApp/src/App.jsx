@@ -1,15 +1,10 @@
 import React from 'react';
-import Card from './components/Card/Card';
-
+import Produto from './components/context/Produto'
 
 const App = () => {
-
-
-    return (<>
-        <div className='max-w-sm m-auto'>
-            <Card />
-        </div>
-    </>);
+    return (
+        <Produto />
+    );
 };
 
 export default App;
