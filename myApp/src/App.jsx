@@ -1,9 +1,20 @@
 import React from 'react';
-import Produto from './components/context/Produto'
+import Animation from './components/animation/Animation'
+
 
 const App = () => {
-    return (
-        <Produto />
+    const [ativar, setAtivar] = React.useState(false)
+
+    return (<>
+        <button
+            onClick={() => setAtivar(!ativar)}
+            className='bg-violet-900 text-white p-4 wiggle'>
+            Ativar
+        </button>
+        {ativar && <Animation />}
+
+
+    </>
     );
 };
 
