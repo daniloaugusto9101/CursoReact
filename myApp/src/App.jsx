@@ -1,11 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './components/pages/Home'
-import Animation from './components/animation/Animation'
-import NoutFound from './components/pages/NoutFound'
-import Header from './components/pages/Header';
-import Sobre from './components/pages/Sobre';
-import Produto from './components/pages/Produto';
+import Header from './components/header/Header';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
+import Produtos from './components/pages/Produtos';
+import Contato from './components/pages/Contato';
+import NotFound from './components/pages/NotFound';
+
 
 const App = () => {
 
@@ -13,11 +12,9 @@ const App = () => {
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='sobre' element={<Sobre />} />
-                <Route path='animation' element={<Animation />} />
-                <Route path='produto/:id' element={<Produto />} />
-                <Route path='*' element={<NoutFound />} />
+                <Route path='*' element={<NotFound />} />
+                <Route path='/' element={<Produtos />} />
+                <Route path='contato' element={<Contato />} />
             </Routes>
         </BrowserRouter>
     );
